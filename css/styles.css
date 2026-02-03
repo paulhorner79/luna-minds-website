@@ -1,0 +1,446 @@
+:root {
+	--black: #000000;
+	--red: #ea0e0e;
+	--purple: #ac0eea;
+	--lilac: #bd99e9;
+	--white: #ffffff;
+	--light-grey: #efefef;
+}
+
+.league-gothic-lunaminds {
+	font-family: "League Gothic", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+
+.roboto-lunaminds {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+
+html {
+	font-size: 100%;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	touch-action: manipulation;
+}
+
+
+body {
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	background-color: var(--black);
+	color: var(--white);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span,
+li,
+img,
+inpot,
+button {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.5;
+	font-weight: inherit;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "League Gothic", sans-serif;
+}
+
+p {
+	line-height: 1.4;
+	font-size: 1.6em;
+	color: var(--white);
+}
+
+h1 {
+	font-size: 3.5em;
+	line-height: 1;
+}
+
+h1 img {
+	max-width: 250px;
+	margin: 28px 40px;
+}
+
+h2 {
+	font-size: 3em;
+	line-height: 1.1;
+}
+
+h3 {
+	font-size: 2.5em;
+}
+
+h4 {
+	font-size: 1.5em;
+	font-weight: bolder;
+	padding-top: 30px;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+
+a,
+button {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	transition: all .3s;
+	line-height: 1;
+}
+
+a:focus,
+a:active,
+a:hover,
+button:focus,
+button:active,
+button:hover,
+a b.light-color:hover {
+	text-decoration: none;
+	color: var(--lilac);
+}
+
+b {
+	font-weight: 500;
+}
+
+img {
+	width: 100%;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+button {
+	outline: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+b.light-color {
+	color: var(--light-grey);
+}
+
+.icon {
+	font-size: 1.1em;
+	display: inline-block;
+	line-height: inherit;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	line-height: inherit;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+
+/* ---------------------------------
+2. COMMONS FOR PAGE DESIGN
+--------------------------------- */
+
+.center-text {
+	text-align: center;
+}
+
+.display-table {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.display-table-cell {
+	display: table-cell;
+	vertical-align: top;
+	padding-top: 15%;
+}
+
+
+
+::-webkit-input-placeholder {
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+
+::-moz-placeholder {
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+
+:-ms-input-placeholder {
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+
+:-moz-placeholder {
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+
+
+.full-height {
+	height: 100%;
+}
+
+.position-static {
+	position: static;
+}
+
+.font-white {
+	color: var(--white);
+}
+
+
+/* ---------------------------------
+3. MAIN SECTION
+--------------------------------- */
+
+.main-area {
+	position: relative;
+	/* height: 100vh; */
+	z-index: 1;
+	padding: 0 20px;
+	min-height: 100vh;
+	/* background-color: var(--black); */
+	/* color: var(--white); */
+}
+
+.main-area:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	opacity: .4;
+	background: var(--black);
+}
+
+.main-area .desc {
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+.main-area .notify-btn {
+	padding: 13px 35px;
+	border-radius: 50px;
+	border: 2px solid var(--lilac);
+	color: var(--white);
+	background: var(--lilac);
+}
+
+.main-area .notify-btn:hover {
+	background: none;
+}
+
+.main-area .social-btn {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 36px;
+}
+
+.main-area .social-btn>li>a {
+	margin: 0 10px;
+	padding-bottom: 7px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* .main-area .social-btn>li>a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: all .2s;
+	height: 2px;
+	background: var(--lilac);
+} */
+
+
+.main-area .social-btn>li>a:hover:after {
+	transform: translateX(100%);
+}
+
+.content {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.header-col {
+	display: table-cell;
+	max-width: 400px;
+	vertical-align: top;
+	text-align: right;
+}
+
+.content-col {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0 3em;
+}
+
+label {
+	width: 100%;
+	line-height: 28px;
+	font-size: 14px;
+	display: block;
+
+}
+
+input.email {
+	width: 100%;
+}
+
+.newsletter {
+	margin-top: 10px;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	padding: 6px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 999px;
+
+	background: rgba(255, 255, 255, 0.06);
+	backdrop-filter: blur(8px);
+
+	max-width: 480px;
+}
+
+.newsletter input {
+	flex: 1;
+	min-width: 0;
+
+	border: 0;
+	outline: 0;
+	background: transparent;
+
+	padding: 12px 14px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.newsletter input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter button {
+	border: 0;
+	cursor: pointer;
+
+	padding: 10px 14px;
+	border-radius: 999px;
+
+	font-size: 14px;
+	font-weight: 600;
+
+
+	color: var(--white);
+	background: var(--black);
+
+	transition: transform 0.06s ease, opacity 0.2s ease;
+}
+
+.newsletter button:active {
+	transform: scale(0.98);
+}
+
+.newsletter:focus-within {
+	border-color: rgba(255, 255, 255, 0.45);
+	box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+}
+
+/* Accessibility helper */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+p.mailchimp {
+	opacity: 0;
+}
